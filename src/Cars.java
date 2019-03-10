@@ -1,10 +1,12 @@
+import java.util.Comparator;
+
 @SuppressWarnings("WeakerAccess")
 
-public class Cars {
+public class Cars implements Comparable <Cars>{
     private String mark;
     private String model;
     private String colour;
-    private int year;
+    private Integer year;
     private int cost;
 
     public Cars(String mark, String model, String colour, int year, int cost) {
@@ -15,6 +17,19 @@ public class Cars {
         this.cost = cost;
     }
 
+    @Override
+    public int compareTo(Cars o) {
+        return this.year.compareTo(o.year);
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "mark='" + mark + '\'' +
+                ", model=" + model +
+                ", year='" + year + '\'' +
+                '}';
+    }
 
     public String getColour() {
         return colour;
@@ -59,4 +74,5 @@ public class Cars {
     public void setCost(int cost) {
         this.cost = cost;
     }
+
 }
