@@ -1,5 +1,3 @@
-import java.util.Comparator;
-
 @SuppressWarnings("WeakerAccess")
 
 public class Cars implements Comparable <Cars>{
@@ -25,9 +23,11 @@ public class Cars implements Comparable <Cars>{
     @Override
     public String toString() {
         return "{" +
-                "mark='" + mark + '\'' +
-                ", model=" + model +
-                ", year='" + year + '\'' +
+                "mark='" + mark + '\'' + "\t\t" +
+                ", model='" + model + '\'' + "\t\t" +
+                ", colour='" + colour + '\'' + "\t\t" +
+                ", year=" + year + "\t\t" +
+                ", cost=" + cost +
                 '}';
     }
 
