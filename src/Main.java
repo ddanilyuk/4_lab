@@ -13,7 +13,7 @@ public class Main {
         arr[5] = new Cars("Porshe", "912", "yellow", 2017, 210000);
 
 
-        System.out.println("-------------до сортировки------------");
+        System.out.println("-------------------до сортировки-----------------");
         for (Cars u : arr) {
             System.out.println(u);
         }
