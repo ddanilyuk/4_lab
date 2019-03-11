@@ -1,6 +1,6 @@
 @SuppressWarnings("WeakerAccess")
 
-public class Cars implements Comparable <Cars>{
+public class Cars /*implements Comparable <Cars>*/{
     private String mark;
     private String model;
     private String colour;
@@ -14,12 +14,13 @@ public class Cars implements Comparable <Cars>{
         this.year = year;
         this.cost = cost;
     }
-
+    /*
+    for ArrayList
     @Override
     public int compareTo(Cars o) {
         return this.year.compareTo(o.year);
     }
-
+    */
     @Override
     public String toString() {
         return "{" +

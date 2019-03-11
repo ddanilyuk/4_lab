@@ -43,7 +43,7 @@ public class Main {
         */
 
 
-        System.out.println("----------после первой сортировки--------");
+        System.out.println("----------после первой сортировки по цене--------");
         //Arrays.sort(arr, Comparator.comparing(Cars::getMark).thenComparing(Cars::getYear));
         Arrays.sort(arr, Comparator.comparing(Cars::getCost));
         for (Cars u : arr) {
@@ -52,7 +52,7 @@ public class Main {
         System.out.print("\n");
 
 
-        System.out.println("----------после второй сортировки--------");
+        System.out.println("----------после второй сортировки по году--------");
         //Arrays.sort(arr, new MyComparator_1());
         Arrays.sort(arr, Comparator.comparing(Cars::getYear).reversed());
         for (Cars u : arr) {
