@@ -11,17 +11,9 @@ public class MyComparator_1 implements Comparator<Cars> {
             if (differentMark < 0) {
                 return 1;
             } else {
-
                 int differentModel = o1.getModel().compareTo(o2.getModel());
-                if (differentModel > 0) {
-                    return 1;
-                } else {
-                    if (differentModel < 0) {
-                        return -1;
-                    } else {
-                        return 0;
-                    }
-                }
+                return differentModel;
+
 
             }
         }

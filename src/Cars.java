@@ -7,7 +7,7 @@ public class Cars{
     private Integer year;
     private int cost;
 
-    public Cars(String mark, String model, String colour, int year, int cost) {
+    Cars(String mark, String model, String colour, int year, int cost) {
         this.mark = mark;
         this.model = model;
         this.colour = colour;
@@ -35,7 +35,7 @@ public class Cars{
     }
 
 
-    public String getMark() {
+    String getMark() {
         return mark;
     }
 
